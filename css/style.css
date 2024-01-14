@@ -245,18 +245,6 @@ button:focus {
   outline: 2px solid var(--color-accent);
 }
 
-@media (max-width: 767px) {
-  #home .max-container {
-    flex-direction: column; /* 핸드폰 크기일 때 수직으로 배치 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-  }
-
-  #home .home__avatar {
-    margin-right: 0; /* 핸드폰 크기일 때 이미지와 텍스트 사이 여백 제거 */
-    display: none;
-  }
-}
-
 /* About */
 .visions {
   display: flex;
@@ -288,20 +276,76 @@ button:focus {
 }
 
 .vision__icon {
-  font-size: 4rem;
-  margin: 1rem 0;
+  font-size: 3rem;
+  margin: 0.5rem 0;
   color: var(--color-accent);
   transition: all 300ms ease;
 }
 
 .vision__title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .vision:hover .vision__icon {
-  transform: rotate(-15deg) scale(1.2);
+  transform: rotate(-15deg) scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .visions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .visions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .visions li {
+    flex: 1;
+    text-align: center;
+    min-width: calc(100%);
+    min-height: calc(100%);
+    margin-bottom: 1rem;
+  }
+
+  .vision {
+    background-color: var(--color-primary-variant);
+    padding: 10px 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  }
+
+  .vision__icon {
+    font-size: 2rem; /* Adjusted size */
+    margin: 0.5rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+  }
+
+  .vision__title {
+    font-size: 0.8rem; /* Adjusted size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .vision__content {
+    font-size: 0.6rem;
+  }
+
+  .vision:hover .vision__icon {
+    transform: rotate(-15deg) scale(1.1);
+  }
 }
 
 .jobs {
@@ -596,7 +640,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .title {
@@ -640,6 +684,19 @@ button:focus {
   .home__title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .home__title--strong {
+    font-size: 2rem;
+    color: var(--color-accent);
+  }
+
+  .home__description {
+    font-size: 1rem;
+  }
+
+  #home .home__avatar {
+    display: none;
   }
 
   .visions {
