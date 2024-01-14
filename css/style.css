@@ -88,13 +88,9 @@ button:focus {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 1rem 0;
-}
-
-.description {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+  font-weight: bold;
 }
 
 /* Header */
@@ -236,14 +232,27 @@ button:focus {
 }
 
 /* About */
-.majors {
+.visions {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin: 2.5rem 0;
 }
 
-.major {
+.visions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.visions li {
+  flex: 1;
+  text-align: center; /* Optional: Center align text within li */
+}
+
+.vision {
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -252,20 +261,20 @@ button:focus {
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
-.major__icon {
+.vision__icon {
   font-size: 4rem;
   margin: 1rem 0;
   color: var(--color-accent);
   transition: all 300ms ease;
 }
 
-.major__title {
+.vision__title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.major:hover .major__icon {
+.vision:hover .vision__icon {
   transform: rotate(-15deg) scale(1.2);
 }
 
@@ -607,12 +616,12 @@ button:focus {
     margin-bottom: 0.5rem;
   }
 
-  .majors {
+  .visions {
     flex-direction: column;
     align-items: center;
   }
 
-  .major {
+  .vision {
     max-width: 25rem;
   }
 
