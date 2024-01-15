@@ -288,6 +288,10 @@ button:focus {
   margin-bottom: 0.75rem;
 }
 
+.vision__content {
+  word-break: keep-all;
+}
+
 .vision:hover .vision__icon {
   transform: rotate(-15deg) scale(1.1);
 }
@@ -340,6 +344,7 @@ button:focus {
 
   .vision__content {
     font-size: 0.6rem;
+    padding-bottom: 0.7rem;
   }
 
   .vision:hover .vision__icon {
@@ -372,6 +377,7 @@ button:focus {
   position: relative;
   background-color: var(--color-primary-variant);
   color: var(--color-text);
+  word-break: keep-all;
 }
 
 #skills::after {
