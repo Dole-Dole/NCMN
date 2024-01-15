@@ -292,7 +292,7 @@ button:focus {
   transform: rotate(-15deg) scale(1.1);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .visions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -313,7 +313,6 @@ button:focus {
     flex: 1;
     text-align: center;
     min-width: calc(100%);
-    min-height: calc(100%);
     margin-bottom: 1rem;
   }
 
