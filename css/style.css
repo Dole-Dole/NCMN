@@ -218,6 +218,7 @@ button:focus {
 .home__title {
   font-size: 3rem;
   margin-bottom: 1rem;
+  word-break: keep-all;
 }
 
 .home__title--strong {
@@ -227,6 +228,7 @@ button:focus {
 
 .home__description {
   font-size: 1.1rem;
+  word-break: keep-all;
 }
 
 .home__contact {
