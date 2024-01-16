@@ -554,29 +554,26 @@ button:focus {
 
 /* Testimonial */
 .testimonials {
-  margin: 3rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .testimonial {
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .testimonial:nth-child(even) .testimonial__img {
   order: 1;
 }
 
-.testimonial__img {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 .testimonial__bubble {
   padding: 1rem;
+  width: 20rem;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
