@@ -29,12 +29,34 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
     <!-- Javascript -->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer></script>
-    <script type="module" src="src/type.js" defer></script>
+    <script type="module" src="public/js/main.js" defer></script>
+    <script type="module" src="public/js/projects.js" defer></script>
+    <script type="module" src="public/js/active_menu.js" defer></script>
+    <script type="module" src="public/js/type.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var subitemList = document.querySelector(".subitemList");
+        var allSubmenuItems = document.querySelectorAll(
+          ".header__menu__item.subitemList"
+        );
+
+        // 클릭 이벤트를 설정
+        document.addEventListener("click", function (event) {
+          // 현재 클릭된 요소가 subitemList인 경우
+          if (event.target.closest(".subitemList") === subitemList) {
+            // active 클래스 토글
+            subitemList.classList.toggle("active");
+          } else {
+            // 다른 곳을 클릭하면 모든 하위 목록을 숨김
+            allSubmenuItems.forEach(function (item) {
+              item.classList.remove("active");
+            });
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -48,8 +70,13 @@
           <li><a class="header__menu__item active" href="#home">Home</a></li>
           <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#work">Media</a></li>
-          <li>
-            <a class="header__menu__item" href="#testimonial">Community</a>
+          <li class="header__menu__item subitemList">
+            <a>Community</a>
+            <ul class="submenu">
+              <li><a href="#subitem1">사역보고</a></li>
+              <li><a href="#subitem2">지출결의서</a></li>
+              <li><a href="#subitem3">훈련점수표</a></li>
+            </ul>
           </li>
         </ul>
       </nav>

@@ -102,7 +102,7 @@ button:focus {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1;
   transition: all 300ms ease;
 }
@@ -151,9 +151,30 @@ button:focus {
   border-bottom: 1px solid var(--color-accent);
 }
 
+.header__menu__item.subitemList:hover {
+  border-bottom: none;
+}
+
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
+}
+
+.header__menu__item:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+.submenu li {
+  margin: 8px;
+}
+.submenu li:hover {
+  border-bottom: 1px solid var(--color-accent);
 }
 
 /* Home */
@@ -675,6 +696,10 @@ button:focus {
 
   .header__nav {
     width: 100%;
+  }
+
+  .subitemList.active .submenu {
+    display: block;
   }
 
   #home {
