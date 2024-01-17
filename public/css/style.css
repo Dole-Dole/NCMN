@@ -424,12 +424,14 @@ button:focus {
   margin: 2rem 0rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
   justify-items: stretch;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ministryStatus {
+  width: 450px;
+  margin: auto;
 }
 
 .skills__title {
@@ -629,20 +631,6 @@ button:focus {
   color: var(--color-text);
 }
 
-#contact::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% + 1.3px);
-  height: 60px;
-  overflow: hidden;
-  line-height: 0;
-  background-color: var(--color-white);
-  mask: var(--divider-arrow);
-  -webkit-mask: var(--divider-arrow);
-}
-
 .contact__links {
   display: flex;
   justify-content: center;
@@ -730,6 +718,17 @@ button:focus {
 
   .skills {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column; /* 모바일 환경에서 세로 방향으로 배치 */
+    margin: 2rem 0rem;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-items: stretch;
+  }
+
+  .ministryStatus {
+    width: 100%;
+    margin-top: 10px;
   }
 
   .bar__metadata {
