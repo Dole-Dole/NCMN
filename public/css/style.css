@@ -627,11 +627,26 @@ button:focus {
 /* Footer */
 #contact {
   position: relative;
-  background-color: var(--color-primary);
-  color: var(--color-text);
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+#contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: var(--color-black);
+  mask: var(--divider-arrow);
+  -webkit-mask: var(--divider-arrow);
 }
 
 .contact__links {
+  color: var(--color-black);
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -640,6 +655,7 @@ button:focus {
 }
 
 .contact__link {
+  color: var(--color-black);
   transition: color 250ms ease-in;
 }
 
