@@ -6,7 +6,6 @@
   --color-accent: var(--color-yellow);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
-
   /* Background */
   --home-bg-gradient: linear-gradient(
     180deg,
@@ -99,7 +98,7 @@ button:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -673,7 +672,7 @@ button:focus {
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .header {

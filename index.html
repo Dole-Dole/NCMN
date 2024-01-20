@@ -57,6 +57,35 @@
         });
       });
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 모달 열기 버튼과 모달 닫기 버튼
+        var openModalBtn = document.getElementById("openModalBtn");
+        var closeModalBtn = document.getElementById("closeModalBtn");
+
+        // 로그인 모달과 모달 컨텐츠
+        var loginModal = document.getElementById("loginModal");
+        var loginModalContent = document.querySelector(".login__modal-content");
+
+        // 모달 열기 버튼 클릭 시
+        openModalBtn.addEventListener("click", function () {
+          loginModal.style.display = "block";
+        });
+
+        // 모달 닫기 버튼 클릭 시
+        closeModalBtn.addEventListener("click", function () {
+          loginModal.style.display = "none";
+        });
+
+        // 모달 외부 클릭 시 닫기
+        window.addEventListener("click", function (event) {
+          if (event.target === loginModal) {
+            loginModal.style.display = "none";
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -68,7 +97,6 @@
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#work">Media</a></li>
           <li class="header__menu__item subitemList">
             <a>Community</a>
@@ -77,6 +105,11 @@
               <li><a href="#subitem2">지출결의서</a></li>
               <li><a href="#subitem3">훈련점수표</a></li>
             </ul>
+          </li>
+          <li>
+            <a class="header__menu__item" href="./public/login.html">
+              <i class="fa-regular fa-user" style="color: white"></i>
+            </a>
           </li>
         </ul>
       </nav>
