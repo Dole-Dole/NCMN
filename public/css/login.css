@@ -37,6 +37,11 @@ body {
   background-color: var(--color-black);
 }
 
+#home .home__avatar {
+  max-width: 300px;
+  bottom: -30px;
+}
+
 #login {
   position: relative;
   background-color: var(--color-white);
