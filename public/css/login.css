@@ -88,7 +88,7 @@ body {
   padding: 1rem;
   font-weight: bold;
   border-radius: 4px;
-  box-shadow: var(--color-white) 0 3px 5px;
+  box-shadow: var(--color-white) 0px 3px 15px;
 }
 
 .login__contact:hover {
@@ -153,6 +153,10 @@ body {
   #username,
   #password {
     width: 100%; /* Make the input fields full-width */
+  }
+
+  .home__title {
+    height: 160px;
   }
 
   .login__container {

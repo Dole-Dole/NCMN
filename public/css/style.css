@@ -236,6 +236,7 @@ button:focus {
 }
 
 .home__title {
+  height: 200px;
   font-size: 3rem;
   margin-bottom: 1rem;
   word-break: keep-all;
@@ -665,6 +666,14 @@ button:focus {
 @media screen and (max-width: 768px) {
   .section {
     padding: 2rem;
+  }
+
+  .header__logo__img {
+    width: 30px;
+    height: 30px;
+  }
+  .header__logo__title {
+    font-size: 1.3rem;
   }
 
   .title {
