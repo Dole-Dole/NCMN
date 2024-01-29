@@ -1,0 +1,147 @@
+body {
+  background-color: var(--color-black);
+}
+
+#home .home__avatar {
+  max-width: 300px;
+  bottom: -30px;
+}
+
+#login {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 5rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.login_title {
+  font-size: 3rem;
+  margin: 0rem 0 2rem 0;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+
+#username,
+#password {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  width: 350px;
+  padding: 14px 17px 13px;
+  border-radius: 6px;
+}
+
+.login_from {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid var(--color-white);
+  border-radius: 9px;
+  box-shadow: var(--color-white) 1px 6px 10px;
+}
+
+.login__container {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.login__contact {
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem 0;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: var(--color-white) 0px 3px 15px;
+}
+
+.login__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
+.login_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.login_menu li {
+  padding: 0 1rem;
+  border-right: 1px solid var(--color-white);
+}
+
+/* footer */
+#contact {
+  position: relative;
+  background-color: var(--color-black);
+  background-image: var(--home-bg-svg);
+  color: var(--color-white);
+}
+
+#home::after {
+  display: none;
+}
+
+#contact::after {
+  display: none;
+}
+
+.contact__links {
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  color: var(--color-white);
+  transition: color 250ms ease-in;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 767px) {
+  #login {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .login_title {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  #username,
+  #password {
+    width: 100%; /* Make the input fields full-width */
+  }
+
+  .home__title {
+    height: 160px;
+  }
+
+  .login__container {
+    margin-top: 1rem; /* Add some space between the avatar and the form */
+    font-size: 1rem;
+  }
+
+  .login_menu li {
+    padding: 0 0.5rem; /* Adjust spacing for menu items */
+    border-right: none; /* Remove right border for the last menu item */
+    font-size: 13px;
+  }
+
+  #login_menu2 {
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+  }
+}

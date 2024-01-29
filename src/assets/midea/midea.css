@@ -1,0 +1,165 @@
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem;
+  }
+
+  .header__logo__img {
+    width: 30px;
+    height: 30px;
+  }
+  .header__logo__title {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-primary);
+  }
+
+  .header__toggle {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__menu.open {
+    display: flex;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .subitemList.active .submenu {
+    display: block;
+  }
+
+  /* Home */
+  #home {
+    padding-bottom: 3rem;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home__title--strong {
+    font-size: 2rem;
+    color: var(--color-accent);
+  }
+
+  .home__description {
+    font-size: 1rem;
+  }
+
+  #home .home__avatar {
+    display: none;
+  }
+
+  .job {
+    justify-content: center;
+  }
+
+  .strategys {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column; /* 모바일 환경에서 세로 방향으로 배치 */
+    margin: 2rem 0rem;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-items: stretch;
+  }
+
+  .ministryStatus {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bar__metadata {
+    padding: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  /* projects */
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .visions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .visions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .visions li {
+    flex: 1;
+    text-align: center;
+    min-width: calc(100%);
+    margin-bottom: 1rem;
+  }
+
+  .vision {
+    background-color: var(--color-primary-variant);
+    padding: 10px 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  }
+
+  .vision__icon {
+    font-size: 2rem; /* Adjusted size */
+    margin: 0.5rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+  }
+
+  .vision__title {
+    font-size: 0.8rem; /* Adjusted size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .vision__content {
+    font-size: 0.6rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .vision:hover .vision__icon {
+    transform: rotate(-15deg) scale(1.1);
+  }
+}

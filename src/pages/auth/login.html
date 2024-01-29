@@ -29,54 +29,40 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/pages/auth/login.css" />
 
     <!-- Javascript -->
-    <script type="module" src="./js/main.js" defer></script>
-    <script type="module" src="./js/projects.js" defer></script>
-    <script type="module" src="./js/active_menu.js" defer></script>
-    <script type="module" src="./js/type.js" defer></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var subitemList = document.querySelector(".subitemList");
-        var allSubmenuItems = document.querySelectorAll(
-          ".header__menu__item.subitemList"
-        );
-
-        // 클릭 이벤트를 설정
-        document.addEventListener("click", function (event) {
-          // 현재 클릭된 요소가 subitemList인 경우
-          if (event.target.closest(".subitemList") === subitemList) {
-            // active 클래스 토글
-            subitemList.classList.toggle("active");
-          } else {
-            // 다른 곳을 클릭하면 모든 하위 목록을 숨김
-            allSubmenuItems.forEach(function (item) {
-              item.classList.remove("active");
-            });
-          }
-        });
-      });
-    </script>
+    <script type="module" src="/src/utils/main.js" defer></script>
+    <script type="module" src="/src/utils/projects.js" defer></script>
+    <script type="module" src="/src/utils/active_menu.js" defer></script>
+    <script type="module" src="/src/utils/type.js" defer></script>
+    <script type="module" src="/src/utils/community_menu.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img class="header__logo__img" src="../images/favicon.ico" alt="logo" />
+        <img
+          class="header__logo__img"
+          src="/src/assets/images/favicon.ico"
+          alt="logo"
+        />
         <h1 class="header__logo__title">
-          <a href="../index.html">NCMN 대학캠퍼스</a>
+          <a href="/public/index.html">NCMN 대학캠퍼스</a>
         </h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
           <li>
-            <a class="header__menu__item active" href="../index.html">Home</a>
+            <a class="header__menu__item active" href="/public/index.html"
+              >Home</a
+            >
           </li>
           <li>
-            <a class="header__menu__item" href="../index.html#work">Media</a>
+            <a class="header__menu__item" href="/public/index.html#meia"
+              >Media</a
+            >
           </li>
           <li class="header__menu__item subitemList">
             <a>Community</a>
@@ -87,9 +73,7 @@
             </ul>
           </li>
           <li>
-            <a class="header__menu__item login" href="#"
-              ><i class="fa-regular fa-user"></i
-            ></a>
+            <a class="header__menu__item login" href="#">Login</a>
           </li>
         </ul>
       </nav>
@@ -103,7 +87,7 @@
         <div class="max-container home__container">
           <img
             class="home__avatar"
-            src="../images/profile.png"
+            src="/src/assets/images/profile.png"
             alt="NMCM 대학캠퍼스"
           />
           <div>

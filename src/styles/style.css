@@ -396,14 +396,14 @@ button:focus {
 }
 
 /* Skills */
-#skills {
+#strategys {
   position: relative;
   background-color: var(--color-primary-variant);
   color: var(--color-text);
   word-break: keep-all;
 }
 
-#skills::after {
+#strategys::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -418,7 +418,7 @@ button:focus {
   -webkit-mask: var(--divider-multi-wave);
 }
 
-.skills {
+.strategys {
   display: flex;
   grid-template-columns: 6fr 4fr;
   margin: 2rem 0rem;
@@ -434,23 +434,23 @@ button:focus {
   margin: auto;
 }
 
-.skills__title {
+.strategys__title {
   color: var(--color-accent);
   margin: 0.5rem 0;
   font-size: 1.5rem;
 }
 
-.skills__coding {
+.strategys__coding {
   grid-row: span 2;
   padding: 1rem;
   background-color: var(--color-primary);
 }
 
-.skills__tools {
+.strategys__tools {
   padding: 1rem;
 }
 
-.skills__etc {
+.strategys__etc {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
@@ -472,8 +472,8 @@ button:focus {
   justify-content: space-between;
 }
 
-/* Work */
-#work {
+/* media */
+#media {
   background-color: var(--color-primary);
   color: var(--color-text);
 }
@@ -575,53 +575,6 @@ button:focus {
   width: 50px;
   height: 2px;
   background-color: var(--color-accent);
-}
-
-/* Testimonial */
-.testimonials {
-  margin: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.testimonial {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.testimonial:nth-child(even) .testimonial__img {
-  order: 1;
-}
-
-.testimonial__bubble {
-  padding: 1rem;
-  width: 20rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.testimonial__bubble__name {
-  color: var(--color-accent);
-  font-weight: bold;
-  filter: brightness(70%);
-}
-
-/* Arrow up */
-.arrow-up {
-  background-color: var(--color-primary);
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  font-size: 3rem;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 100%;
-  text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-accent);
-  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
@@ -740,7 +693,7 @@ button:focus {
     justify-content: center;
   }
 
-  .skills {
+  .strategys {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column; /* 모바일 환경에서 세로 방향으로 배치 */
