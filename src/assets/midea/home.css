@@ -3,6 +3,7 @@
     padding: 2rem;
   }
 
+  /* header */
   .header__logo__img {
     width: 30px;
     height: 30px;
@@ -104,11 +105,7 @@
     width: 100%;
   }
 
-  /* projects */
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  /* visions */
   .visions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -161,5 +158,10 @@
 
   .vision:hover .vision__icon {
     transform: rotate(-15deg) scale(1.1);
+  }
+
+  /* projects */
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

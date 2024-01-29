@@ -2,9 +2,80 @@ body {
   background-color: var(--color-black);
 }
 
+/* Home */
+#home {
+  position: relative;
+  background-color: var(--color-primary);
+  background-image: var(--home-bg-svg);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+#home .max-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #home .home__avatar {
+  position: relative;
+  width: 100%; /* 이미지를 부모 요소의 100%로 설정하여 부모의 크기에 맞춤 */
+  height: auto; /* 가로 비율 유지 */
+  margin-right: 20px; /* 이미지와 텍스트 사이 여백 조절 */
   max-width: 300px;
   bottom: -30px;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--color-white);
+  mask: var(--divider-single-wave);
+  -webkit-mask: var(--divider-single-wave);
+}
+
+.home__title {
+  height: 200px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  word-break: keep-all;
+}
+
+.home__title--strong {
+  font-size: 3rem;
+  color: var(--color-accent);
+}
+
+.home__description {
+  font-size: 1.1rem;
+  word-break: keep-all;
+}
+
+.home__contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.home__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
 }
 
 #login {
@@ -109,39 +180,4 @@ body {
 
 .contact__link:hover {
   color: var(--color-accent);
-}
-
-@media (max-width: 767px) {
-  #login {
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
-  }
-
-  .login_title {
-    font-size: 2rem; /* Decrease font size for smaller screens */
-  }
-
-  #username,
-  #password {
-    width: 100%; /* Make the input fields full-width */
-  }
-
-  .home__title {
-    height: 160px;
-  }
-
-  .login__container {
-    margin-top: 1rem; /* Add some space between the avatar and the form */
-    font-size: 1rem;
-  }
-
-  .login_menu li {
-    padding: 0 0.5rem; /* Adjust spacing for menu items */
-    border-right: none; /* Remove right border for the last menu item */
-    font-size: 13px;
-  }
-
-  #login_menu2 {
-    border-left: 1px solid var(--color-white);
-    border-right: 1px solid var(--color-white);
-  }
 }
