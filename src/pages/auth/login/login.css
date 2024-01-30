@@ -1,12 +1,11 @@
 body {
-  background-color: var(--color-black);
+  background-image: var(--home-bg-svg);
+  background-color: var(--color-primary);
 }
 
 /* Home */
 #home {
   position: relative;
-  background-color: var(--color-primary);
-  background-image: var(--home-bg-svg);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -151,8 +150,7 @@ body {
 /* footer */
 #contact {
   position: relative;
-  background-color: var(--color-black);
-  background-image: var(--home-bg-svg);
+  background-color: transparent;
   color: var(--color-white);
 }
 

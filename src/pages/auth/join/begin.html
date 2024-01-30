@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>NCMN 대학캠퍼스</title>
+    <meta name="description" content="NCMN 대학캠퍼스 홈페이지" />
+    <meta name="author" content="NCMN 대학캠퍼스" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="NCMN 대학캠퍼스" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ifh.cc/g/RltVYz.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/pages/auth/join/begin.css" />
+    <link rel="stylesheet" href="/src/assets/midea/home.css" />
+    <link rel="stylesheet" href="/src/assets/midea/login.css" />
+
+    <!-- Javascript -->
+    <script type="module" src="/src/utils/community_menu.js" defer></script>
+    <script type="module" src="/src/utils/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="/src/assets/images/favicon.ico"
+          alt="logo"
+        />
+        <h1 class="header__logo__title">
+          <a href="/public/index.html">NCMN 대학캠퍼스</a>
+        </h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li>
+            <a class="header__menu__item active" href="/public/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" href="/public/index.html#meia"
+              >Media</a
+            >
+          </li>
+          <li class="header__menu__item subitemList">
+            <a>Community</a>
+            <ul class="submenu">
+              <li><a href="#subitem1">사역보고</a></li>
+              <li><a href="#subitem2">지출결의서</a></li>
+              <li><a href="#subitem3">훈련점수표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="header__menu__item login"
+              href="/src/pages/auth/login/login.html"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <section id="begin">
+        <div class="max-container begin__container">
+          <img
+            class="begin__avatar"
+            src="/src/assets/images/profile.png"
+            alt="NMCM 대학캠퍼스"
+          />
+          <div>
+            <h2 class="begin__title">
+              NCMN 대학캠퍼스 <br />
+              <strong class="home__title--strong"
+                >오늘은 캠퍼스로<br />내일은 열방으로</strong
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="max-container">
+          <form class="begin_from" action="#">
+            <div>
+              <div class="form_item userId" tabindex="0">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  id="id"
+                  name="id"
+                  placeholder="아이디"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocapitalize="off"
+                />
+              </div>
+              <div class="form_item lock password" tabindex="0">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  id="pswd1"
+                  name="pswd1"
+                  placeholder="비밀번호"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocomplete="new-password"
+                />
+              </div>
+            </div>
+
+            <div class="inforList">
+              <div class="form_item username" tabindex="0">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="이름"
+                  class="input"
+                  value=""
+                  maxlength="5"
+                  autocapitalize="off"
+                />
+              </div>
+              <div class="form_item birthday" tabindex="0">
+                <i class="fa-regular fa-calendar-days"></i>
+                <input
+                  type="text"
+                  id="birthday"
+                  name="birthday"
+                  placeholder="생년월일 8자리"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form_item university" tabindex="0">
+                <i class="fa-brands fa-google-scholar"></i>
+                <input
+                  type="text"
+                  id="university"
+                  name="university"
+                  placeholder="대학교"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form_item lock phone" tabindex="0">
+                <i class="fa-solid fa-phone"></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="전화번호"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocomplete=""
+                />
+              </div>
+            </div>
+
+            <button class="begin__contact" name="begin__contact" type="submit">
+              다음
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.youtube.com/@kingsheroncmn"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.instagram.com/kings_hero0214/"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="description">nmcnKingHero@test.com</p>
+        <p class="description">ⓒ NCMN. Nations-Changer Movement & Network.</p>
+      </div>
+    </footer>
+  </body>
+</html>
