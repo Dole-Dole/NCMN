@@ -101,22 +101,34 @@
         <div class="max-container login__container">
           <form class="login_from" action="#" method="POST">
             <h1 class="login_title">Login</h1>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="아이디"
-              required
-              maxlength="41"
-            />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="비밀번호"
-              required
-              maxlength="16"
-            />
+            <div>
+              <div class="form_item userId" tabindex="0">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  id="id"
+                  name="id"
+                  placeholder="아이디"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocapitalize="off"
+                />
+              </div>
+              <div class="form_item lock password" tabindex="0">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  id="pswd1"
+                  name="pswd1"
+                  placeholder="비밀번호"
+                  class="input"
+                  value=""
+                  maxlength="20"
+                  autocomplete="new-password"
+                />
+              </div>
+            </div>
             <button class="login__contact" type="submit">Login</button>
             <ul class="login_menu">
               <li><a href="#subitem1">비밀번호 찾기</a></li>
