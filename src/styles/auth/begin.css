@@ -67,12 +67,6 @@ body {
   box-shadow: var(--color-white) 0px 3px 15px;
 }
 
-.begin__contact:hover {
-  background-color: transparent;
-  color: var(--color-text);
-  outline: 2px solid var(--color-accent);
-}
-
 .form_item {
   display: flex;
   align-items: center;
@@ -103,6 +97,17 @@ body {
 
 .inforList {
   margin-top: 10px;
+}
+
+.begin__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
+.begin__contact:disabled {
+  background: #8990a0;
+  cursor: default;
 }
 
 /* footer */
