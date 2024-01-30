@@ -30,13 +30,11 @@
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/src/styles/style.css" />
-    <link rel="stylesheet" href="/src/pages/auth/login.css" />
+    <link rel="stylesheet" href="/src/pages/auth/login/login.css" />
     <link rel="stylesheet" href="/src/assets/midea/login.css" />
 
     <!-- Javascript -->
     <script type="module" src="/src/utils/main.js" defer></script>
-    <script type="module" src="/src/utils/projects.js" defer></script>
-    <script type="module" src="/src/utils/active_menu.js" defer></script>
     <script type="module" src="/src/utils/type.js" defer></script>
     <script type="module" src="/src/utils/community_menu.js" defer></script>
   </head>
@@ -111,7 +109,6 @@
               required
               maxlength="41"
             />
-
             <input
               type="password"
               id="password"
@@ -124,7 +121,9 @@
             <ul class="login_menu">
               <li><a href="#subitem1">비밀번호 찾기</a></li>
               <li id="login_menu2"><a href="#subitem1">아이디 찾기</a></li>
-              <li style="border: none"><a href="#subitem1">회원가입</a></li>
+              <li style="border: none">
+                <a href="/src/pages/auth/join/agree.html">회원가입</a>
+              </li>
             </ul>
           </form>
         </div>
