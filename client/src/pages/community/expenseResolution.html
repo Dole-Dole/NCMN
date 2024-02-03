@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>NCMN 대학캠퍼스</title>
+    <meta name="description" content="NCMN 대학캠퍼스 홈페이지" />
+    <meta name="author" content="NCMN 대학캠퍼스" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="NCMN 대학캠퍼스" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ifh.cc/g/RltVYz.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/client/src/styles/style.css" />
+    <link rel="stylesheet" href="/client/public/home.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/home.css" />
+    <!-- Javascript -->
+    <script type="module" src="/client/src/utils/main.js" defer></script>
+    <script type="module" src="/client/src/utils/projects.js" defer></script>
+    <script type="module" src="/client/src/utils/active_menu.js" defer></script>
+    <script type="module" src="/client/src/utils/type.js" defer></script>
+    <script
+      type="module"
+      src="/client/src/utils/community_menu.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="/client/src/assets/images/favicon.ico"
+          alt="logo"
+        />
+        <h1 class="header__logo__title"><a href="#">NCMN 대학캠퍼스</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#media">Media</a></li>
+          <li class="header__menu__item subitemList">
+            <a>Community</a>
+            <ul class="community">
+              <li><a href="#">사역보고</a></li>
+              <li>
+                <a href="/client/src/pages/community/expenseResolution.html"
+                  >지출결의서</a
+                >
+              </li>
+              <li><a href="#subitem3">훈련점수표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="header__menu__item"
+              href="/client/src/pages/auth/login/login.html"
+            >
+              Login
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="max-container home__container">
+          <img
+            class="home__avatar"
+            src="/client/src/assets/images/profile.png"
+            alt="NMCM 대학캠퍼스"
+          />
+          <div>
+            <h2 class="home__title">
+              NCMN 대학캠퍼스 <br />
+              <strong class="home__title--strong"
+                >오늘은 캠퍼스로<br />내일은 열방으로</strong
+              >
+            </h2>
+            <p class="home__description">
+              주의 권능의 날에 주의 백성이 거룩한 옷을 입고 <br />
+              즐거이 헌신하니 새벽 이슬 같은 <br />
+              주의 청년들이 주께 나오는도다
+              <br />(시편 110:3)
+            </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <!-- vision -->
+      <section id="about" class="section max-container">
+        <h2 class="title">NCMN 대학캠퍼스 비전</h2>
+        <ul class="visions">
+          <li class="vision">
+            <i class="fa-regular fa-flag vision__icon"></i>
+            <p class="vision__title">기독교 문명 개혁운동</p>
+            <p class="vision__content">
+              대한민국 300여개 대학과 <br />
+              전세계 대학캠퍼스 안에 <br />
+              NCMN의 5대 운동을 일으켜 <br />
+              기독교 문명개혁운동을<br />
+              주도하는 사역입니다.
+            </p>
+          </li>
+          <li class="vision">
+            <i class="fa-solid fa-earth-americas vision__icon"></i>
+            <p class="vision__title">북한과 열방</p>
+            <p class="vision__content">
+              대학캠퍼스를 넘어서서 <br />
+              대한민국과 북한과 열방 가운데<br />
+              하나님의 영광이 가득차게 <br />
+              하는 것이 우리의 비전입니다.
+            </p>
+          </li>
+          <li class="vision">
+            <i class="fa-solid fa-people-group vision__icon"></i>
+            <p class="vision__title">다음세대</p>
+            <p class="vision__content">
+              NCMN 대학캠퍼스 사역을 통해서 <br />
+              기독교문명개혁운동을 주도할<br />
+              다음세대들이 일어날 것입니다.
+            </p>
+          </li>
+          <li class="vision">
+            <i class="fa-solid fa-person-rays vision__icon"></i>
+            <p class="vision__title">NCer</p>
+            <p class="vision__content">
+              대한민국과 열방과 <br />
+              사회 각 영역안에 하나님 나라의 <br />
+              원칙과 하나님의 성품이 나타내도록 <br />
+              Nations-Changer들을 <br />
+              일으킬 것입니다.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.youtube.com/@kingsheroncmn"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.instagram.com/kings_hero0214/"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="description">nmcnKingHero@test.com</p>
+        <p class="description">ⓒ NCMN. Nations-Changer Movement & network.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -29,14 +29,18 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="/src/styles/style.css" />
-    <link rel="stylesheet" href="/src/styles/auth/agree.css" />
-    <link rel="stylesheet" href="/src/styles/media/home.css" />
-    <link rel="stylesheet" href="/src/styles/media/login.css" />
+    <link rel="stylesheet" href="/client/src/styles/style.css" />
+    <link rel="stylesheet" href="/client/src/styles/auth/agree.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/home.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/login.css" />
 
     <!-- Javascript -->
-    <script type="module" src="/src/utils/community_menu.js" defer></script>
-    <script type="module" src="/src/utils/type.js" defer></script>
+    <script
+      type="module"
+      src="/client/src/utils/community_menu.js"
+      defer
+    ></script>
+    <script type="module" src="/client/src/utils/type.js" defer></script>
 
     <script>
       function agreeCheck(frm) {
@@ -52,28 +56,30 @@
       <div class="header__logo">
         <img
           class="header__logo__img"
-          src="/src/assets/images/favicon.ico"
+          src="/client/src/assets/images/favicon.ico"
           alt="logo"
         />
         <h1 class="header__logo__title">
-          <a href="/public/index.html">NCMN 대학캠퍼스</a>
+          <a href="/client/public/index.html">NCMN 대학캠퍼스</a>
         </h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
           <li>
-            <a class="header__menu__item active" href="/public/index.html"
+            <a
+              class="header__menu__item active"
+              href="/client/public/index.html"
               >Home</a
             >
           </li>
           <li>
-            <a class="header__menu__item" href="/public/index.html#meia"
+            <a class="header__menu__item" href="/client/public/index.html#meia"
               >Media</a
             >
           </li>
           <li class="header__menu__item subitemList">
             <a>Community</a>
-            <ul class="submenu">
+            <ul class="community">
               <li><a href="#subitem1">사역보고</a></li>
               <li><a href="#subitem2">지출결의서</a></li>
               <li><a href="#subitem3">훈련점수표</a></li>
@@ -82,7 +88,7 @@
           <li>
             <a
               class="header__menu__item login"
-              href="/src/pages/auth/login/login.html"
+              href="/client/src/pages/auth/login/login.html"
               >Login</a
             >
           </li>
@@ -98,7 +104,7 @@
         <div class="max-container agree__container">
           <img
             class="agree__avatar"
-            src="/src/assets/images/profile.png"
+            src="/client/src/assets/images/profile.png"
             alt="NMCM 대학캠퍼스"
           />
           <div>
@@ -111,7 +117,10 @@
           </div>
         </div>
         <div class="max-container login__container">
-          <form class="agree_from" action="/src/pages/auth/join/begin.html">
+          <form
+            class="agree_from"
+            action="/client/src/pages/auth/join/begin.html"
+          >
             <div class="check_terms">
               <div class="check_wrap">
                 <input
