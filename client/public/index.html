@@ -31,7 +31,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/client/src/styles/style.css" />
     <link rel="stylesheet" href="./home.css" />
-    <link rel="stylesheet" href="/client//src/styles/media/home.css" />
+    <link rel="stylesheet" href="/client//src/styles/media/style.css" />
     <!-- Javascript -->
     <script type="module" src="/client/src/utils/main.js" defer></script>
     <script type="module" src="/client/src/utils/projects.js" defer></script>
@@ -44,303 +44,306 @@
     ></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__logo">
-        <img
-          class="header__logo__img"
-          src="/client/src/assets/images/favicon.ico"
-          alt="logo"
-        />
-        <h1 class="header__logo__title"><a href="#">NCMN 대학캠퍼스</a></h1>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#media">Media</a></li>
-          <li class="header__menu__item subitemList">
-            <a>Community</a>
-            <ul class="community">
-              <li><a href="#">사역보고</a></li>
-              <li>
-                <a href="/client/src/pages/community/expenseResolution.html"
-                  >지출결의서</a
-                >
-              </li>
-              <li><a href="#subitem3">훈련점수표</a></li>
-            </ul>
-          </li>
-          <li>
-            <a
-              class="header__menu__item"
-              href="/client/src/pages/auth/login/login.html"
-            >
-              Login
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle" aria-label="navigation menu toggle">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Home -->
-      <section id="home">
-        <div class="max-container home__container">
+    <div id="wrap">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__logo">
           <img
-            class="home__avatar"
-            src="/client/src/assets/images/profile.png"
-            alt="NMCM 대학캠퍼스"
+            class="header__logo__img"
+            src="/client/src/assets/images/favicon.ico"
+            alt="logo"
           />
-          <div>
-            <h2 class="home__title">
-              NCMN 대학캠퍼스 <br />
-              <strong class="home__title--strong"
-                >오늘은 캠퍼스로<br />내일은 열방으로</strong
-              >
-            </h2>
-            <p class="home__description">
-              주의 권능의 날에 주의 백성이 거룩한 옷을 입고 <br />
-              즐거이 헌신하니 새벽 이슬 같은 <br />
-              주의 청년들이 주께 나오는도다
-              <br />(시편 110:3)
-            </p>
-            <a class="home__contact" href="#contact">Contact Me</a>
-          </div>
+          <h1 class="header__logo__title"><a href="#">NCMN 대학캠퍼스</a></h1>
         </div>
-      </section>
-      <!-- vision -->
-      <section id="about" class="section max-container">
-        <h2 class="title">NCMN 대학캠퍼스 비전</h2>
-        <ul class="visions">
-          <li class="vision">
-            <i class="fa-regular fa-flag vision__icon"></i>
-            <p class="vision__title">기독교 문명 개혁운동</p>
-            <p class="vision__content">
-              대한민국 300여개 대학과 <br />
-              전세계 대학캠퍼스 안에 <br />
-              NCMN의 5대 운동을 일으켜 <br />
-              기독교 문명개혁운동을<br />
-              주도하는 사역입니다.
-            </p>
-          </li>
-          <li class="vision">
-            <i class="fa-solid fa-earth-americas vision__icon"></i>
-            <p class="vision__title">북한과 열방</p>
-            <p class="vision__content">
-              대학캠퍼스를 넘어서서 <br />
-              대한민국과 북한과 열방 가운데<br />
-              하나님의 영광이 가득차게 <br />
-              하는 것이 우리의 비전입니다.
-            </p>
-          </li>
-          <li class="vision">
-            <i class="fa-solid fa-people-group vision__icon"></i>
-            <p class="vision__title">다음세대</p>
-            <p class="vision__content">
-              NCMN 대학캠퍼스 사역을 통해서 <br />
-              기독교문명개혁운동을 주도할<br />
-              다음세대들이 일어날 것입니다.
-            </p>
-          </li>
-          <li class="vision">
-            <i class="fa-solid fa-person-rays vision__icon"></i>
-            <p class="vision__title">NCer</p>
-            <p class="vision__content">
-              대한민국과 열방과 <br />
-              사회 각 영역안에 하나님 나라의 <br />
-              원칙과 하나님의 성품이 나타내도록 <br />
-              Nations-Changer들을 <br />
-              일으킬 것입니다.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- strategy -->
-      <section id="strategys" class="section">
-        <div class="max-container">
-          <h2 class="title">NCMN 대학캠퍼스 전략</h2>
-          <p>
-            NCMN 대학캠퍼스사역은 대학교에서 NCMN의 5대 운동을 세워갈 것입니다.
-          </p>
-          <div class="strategys">
-            <section class="strategys__coding">
-              <h3 class="strategys__title">5대 운동</h3>
-              <ul>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span
-                      >1. 대학교 '5K 무료나눔'을 일으켜 캠퍼스의 영적토양을
-                      기경한다.</span
-                    >
-                  </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a class="header__menu__item active" href="#home">Home</a></li>
+            <li><a class="header__menu__item" href="#media">Media</a></li>
+            <li class="header__menu__item subitemList">
+              <a>Community</a>
+              <ul class="community">
+                <li><a href="#">사역보고</a></li>
+                <li>
+                  <a href="/client/src/pages/community/expenseResolution.html"
+                    >지출결의서</a
+                  >
                 </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span
-                      >2. 10만중보기도운동을 일으켜 캠퍼스와 캠퍼스반경 5km
-                      도시를 위해 기도한다.</span
-                    >
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span
-                      >3. 말씀배가운동을 일으켜 캠퍼스에 말씀이 흥왕하도록
-                      말씀부흥운동을 일으킨다.</span
-                    >
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span
-                      >4. 체리배가운동을 일으켜 다음 세대가 진정한 지도력을
-                      펼치도록 함께 훈련한다.</span
-                    >
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span
-                      >5. 주인바꾸기 운동을 일으켜 돈의 노예가 아닌 하나님을
-                      주인으로 섬기는 다음 세대를 일으킨다.</span
-                    >
-                  </div>
-                </li>
+                <li><a href="#subitem3">훈련점수표</a></li>
               </ul>
-            </section>
+            </li>
+            <li>
+              <a
+                class="header__menu__item"
+                href="/client/src/pages/auth/login/login.html"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
+      <!-- Main -->
+      <main>
+        <!-- Home -->
+        <section id="home">
+          <div class="max-container home__container">
+            <img
+              class="home__avatar"
+              src="/client/src/assets/images/profile.png"
+              alt="NMCM 대학캠퍼스"
+            />
             <div>
-              <img
-                class="ministryStatus"
-                src="/client/src/assets/images/statusMap.png"
-                alt=""
-              />
+              <h2 class="home__title">
+                NCMN 대학캠퍼스 <br />
+                <strong class="home__title--strong"
+                  >오늘은 캠퍼스로<br />내일은 열방으로</strong
+                >
+              </h2>
+              <p class="home__description">
+                주의 권능의 날에 주의 백성이 거룩한 옷을 입고 <br />
+                즐거이 헌신하니 새벽 이슬 같은 <br />
+                주의 청년들이 주께 나오는도다
+                <br />(시편 110:3)
+              </p>
+              <a class="home__contact" href="#contact">Contact Me</a>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- media -->
-      <section id="media" class="section">
-        <div class="max-container">
-          <h2 class="title">NCMN 대학캠퍼스 Media</h2>
-          <p class="description">Video & Photo</p>
-          <ul class="categories">
-            <li>
-              <button class="category category--selected" data-category="all">
-                All <span class="category__count">4</span>
-              </button>
+        </section>
+        <!-- vision -->
+        <section id="about" class="section max-container">
+          <h2 class="title">NCMN 대학캠퍼스 비전</h2>
+          <ul class="visions">
+            <li class="vision">
+              <i class="fa-regular fa-flag vision__icon"></i>
+              <p class="vision__title">기독교 문명 개혁운동</p>
+              <p class="vision__content">
+                대한민국 300여개 대학과 <br />
+                전세계 대학캠퍼스 안에 <br />
+                NCMN의 5대 운동을 일으켜 <br />
+                기독교 문명개혁운동을<br />
+                주도하는 사역입니다.
+              </p>
             </li>
-            <li>
-              <button class="category" data-category="kingHero">
-                대학사역 <span class="category__count">2</span>
-              </button>
+            <li class="vision">
+              <i class="fa-solid fa-earth-americas vision__icon"></i>
+              <p class="vision__title">북한과 열방</p>
+              <p class="vision__content">
+                대학캠퍼스를 넘어서서 <br />
+                대한민국과 북한과 열방 가운데<br />
+                하나님의 영광이 가득차게 <br />
+                하는 것이 우리의 비전입니다.
+              </p>
             </li>
-            <li>
-              <button class="category" data-category="visionCamp">
-                비전캠프 <span class="category__count">2</span>
-              </button>
+            <li class="vision">
+              <i class="fa-solid fa-people-group vision__icon"></i>
+              <p class="vision__title">다음세대</p>
+              <p class="vision__content">
+                NCMN 대학캠퍼스 사역을 통해서 <br />
+                기독교문명개혁운동을 주도할<br />
+                다음세대들이 일어날 것입니다.
+              </p>
+            </li>
+            <li class="vision">
+              <i class="fa-solid fa-person-rays vision__icon"></i>
+              <p class="vision__title">NCer</p>
+              <p class="vision__content">
+                대한민국과 열방과 <br />
+                사회 각 영역안에 하나님 나라의 <br />
+                원칙과 하나님의 성품이 나타내도록 <br />
+                Nations-Changer들을 <br />
+                일으킬 것입니다.
+              </p>
             </li>
           </ul>
-          <ul class="projects">
-            <li class="project" data-type="kingHero">
-              <a
-                href="https://www.youtube.com/watch?v=Vm5m18DjPfA&t=71s"
-                target="_blank"
-              >
+        </section>
+        <!-- strategy -->
+        <section id="strategys" class="section">
+          <div class="max-container">
+            <h2 class="title">NCMN 대학캠퍼스 전략</h2>
+            <p>
+              NCMN 대학캠퍼스사역은 대학교에서 NCMN의 5대 운동을 세워갈
+              것입니다.
+            </p>
+            <div class="strategys">
+              <section class="strategys__coding">
+                <h3 class="strategys__title">5대 운동</h3>
+                <ul>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span
+                        >1. 대학교 '5K 무료나눔'을 일으켜 캠퍼스의 영적토양을
+                        기경한다.</span
+                      >
+                    </div>
+                  </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span
+                        >2. 10만중보기도운동을 일으켜 캠퍼스와 캠퍼스반경 5km
+                        도시를 위해 기도한다.</span
+                      >
+                    </div>
+                  </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span
+                        >3. 말씀배가운동을 일으켜 캠퍼스에 말씀이 흥왕하도록
+                        말씀부흥운동을 일으킨다.</span
+                      >
+                    </div>
+                  </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span
+                        >4. 체리배가운동을 일으켜 다음 세대가 진정한 지도력을
+                        펼치도록 함께 훈련한다.</span
+                      >
+                    </div>
+                  </li>
+                  <li class="bar">
+                    <div class="bar__metadata">
+                      <span
+                        >5. 주인바꾸기 운동을 일으켜 돈의 노예가 아닌 하나님을
+                        주인으로 섬기는 다음 세대를 일으킨다.</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <div>
                 <img
-                  src="https://i.ytimg.com/vi/Vm5m18DjPfA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAN4JNuER9ambXB_hXa1b_YdNObOw"
-                  alt="project1"
-                  class="project__img"
+                  class="ministryStatus"
+                  src="/client/src/assets/images/statusMap.png"
+                  alt=""
                 />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>NCMN 대학캠퍼스 룩북</p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="kingHero">
-              <a
-                href="https://www.youtube.com/watch?v=EUdsol76BOM"
-                target="_blank"
-              >
-                <img
-                  src="https://i.ytimg.com/vi/EUdsol76BOM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6s_2SqLOnqzRehY-P3tDDkDiSVw"
-                  alt="project2"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #2</h3>
-                  <p>사역 브이로그</p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="visionCamp">
-              <a
-                href="https://www.youtube.com/watch?v=jPhMEoH3FYQ"
-                target="_blank"
-              >
-                <img
-                  src="https://i.ytimg.com/vi/jPhMEoH3FYQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVlnsZmCFSK1g0nN60DxHygCd6Ug"
-                  alt="project3"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #3</h3>
-                  <p>NCMN 대학사역 비전캠프 4기</p>
-                </div>
-              </a>
-            </li>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- media -->
+        <section id="media" class="section">
+          <div class="max-container">
+            <h2 class="title">NCMN 대학캠퍼스 Media</h2>
+            <p class="description">Video & Photo</p>
+            <ul class="categories">
+              <li>
+                <button class="category category--selected" data-category="all">
+                  All <span class="category__count">4</span>
+                </button>
+              </li>
+              <li>
+                <button class="category" data-category="kingHero">
+                  대학사역 <span class="category__count">2</span>
+                </button>
+              </li>
+              <li>
+                <button class="category" data-category="visionCamp">
+                  비전캠프 <span class="category__count">2</span>
+                </button>
+              </li>
+            </ul>
+            <ul class="projects">
+              <li class="project" data-type="kingHero">
+                <a
+                  href="https://www.youtube.com/watch?v=Vm5m18DjPfA&t=71s"
+                  target="_blank"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/Vm5m18DjPfA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAN4JNuER9ambXB_hXa1b_YdNObOw"
+                    alt="project1"
+                    class="project__img"
+                  />
+                  <div class="project__metadata">
+                    <h3 class="project__title">Project #1</h3>
+                    <p>NCMN 대학캠퍼스 룩북</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project" data-type="kingHero">
+                <a
+                  href="https://www.youtube.com/watch?v=EUdsol76BOM"
+                  target="_blank"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/EUdsol76BOM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6s_2SqLOnqzRehY-P3tDDkDiSVw"
+                    alt="project2"
+                    class="project__img"
+                  />
+                  <div class="project__metadata">
+                    <h3 class="project__title">Project #2</h3>
+                    <p>사역 브이로그</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project" data-type="visionCamp">
+                <a
+                  href="https://www.youtube.com/watch?v=jPhMEoH3FYQ"
+                  target="_blank"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/jPhMEoH3FYQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVlnsZmCFSK1g0nN60DxHygCd6Ug"
+                    alt="project3"
+                    class="project__img"
+                  />
+                  <div class="project__metadata">
+                    <h3 class="project__title">Project #3</h3>
+                    <p>NCMN 대학사역 비전캠프 4기</p>
+                  </div>
+                </a>
+              </li>
 
-            <li class="project" data-type="visionCamp">
+              <li class="project" data-type="visionCamp">
+                <a
+                  href="https://www.youtube.com/watch?v=RKy-s8HYRwY"
+                  target="_blank"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/RKy-s8HYRwY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAryzjQHcUNn-tsGLRmivVx-kU0Nw"
+                    alt="project6"
+                    class="project__img"
+                  />
+                  <div class="project__metadata">
+                    <h3 class="project__title">Project #4</h3>
+                    <p>NCMN 대학사역 비전캠프 4기</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer id="contact" class="section">
+        <div class="max-container">
+          <ul class="contact__links">
+            <li>
               <a
-                href="https://www.youtube.com/watch?v=RKy-s8HYRwY"
+                class="contact__link"
+                href="https://www.youtube.com/@kingsheroncmn"
                 target="_blank"
+                title="my github link"
               >
-                <img
-                  src="https://i.ytimg.com/vi/RKy-s8HYRwY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAryzjQHcUNn-tsGLRmivVx-kU0Nw"
-                  alt="project6"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #4</h3>
-                  <p>NCMN 대학사역 비전캠프 4기</p>
-                </div>
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/kings_hero0214/"
+                target="_blank"
+                title="my linkedin link"
+              >
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
           </ul>
+          <p class="description">nmcnKingHero@test.com</p>
+          <p class="description">ⓒ NCMN. Nations-Changer Movement & network.</p>
         </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://www.youtube.com/@kingsheroncmn"
-              target="_blank"
-              title="my github link"
-            >
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact__link"
-              href="https://www.instagram.com/kings_hero0214/"
-              target="_blank"
-              title="my linkedin link"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="description">nmcnKingHero@test.com</p>
-        <p class="description">ⓒ NCMN. Nations-Changer Movement & network.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
