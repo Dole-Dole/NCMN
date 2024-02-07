@@ -29,12 +29,20 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
     <link rel="stylesheet" href="/client/src/styles/style.css" />
     <link rel="stylesheet" href="/client/src/styles/auth/begin.css" />
     <link rel="stylesheet" href="/client/src/styles/media/home.css" />
     <link rel="stylesheet" href="/client/src/styles/media/login.css" />
 
     <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script
       type="module"
       src="/client/src/utils/community_menu.js"
@@ -46,6 +54,7 @@
       src="/client/src/pages/auth/join/begin.js"
       defer
     ></script>
+    <script type="module" src="./datepicker.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -164,7 +173,7 @@
                   type="text"
                   id="birthday"
                   name="birthday"
-                  placeholder="생년월일 8자리"
+                  placeholder="생년월일"
                   class="input"
                   value=""
                   maxlength="20"
