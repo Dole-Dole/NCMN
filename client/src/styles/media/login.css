@@ -3,6 +3,10 @@
     padding: 2rem 1rem; /* Adjust padding for smaller screens */
   }
 
+  .login_from {
+    width: 380px;
+  }
+
   .login_title {
     font-size: 2rem; /* Decrease font size for smaller screens */
   }
@@ -17,7 +21,7 @@
   }
 
   .login__container {
-    margin-top: 1rem; /* Add some space between the avatar and the form */
+    margin-top: 2rem; /* Add some space between the avatar and the form */
     font-size: 1rem;
   }
 

@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+  .agree__avatar {
+    display: none;
+  }
+
+  .agree__container {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .agree__title {
+    height: 160px;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .agree_from {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    height: 380px;
+  }
+
+  #agree .max-container {
+    width: 380px;
+  }
+
+  #agree {
+    padding-bottom: 4rem;
+  }
+}

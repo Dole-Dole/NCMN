@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  .begin__avatar {
+    display: none;
+  }
+
+  .begin__title {
+    height: 160px;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .begin_from {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    height: 380px;
+  }
+
+  .begin__contact {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  #begin .max-container {
+    width: 380px;
+  }
+
+  #begin {
+    padding-bottom: 4rem;
+  }
+
+  .form_item {
+    min-height: 40px;
+    height: 41px;
+  }
+}
