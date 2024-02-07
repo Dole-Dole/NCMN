@@ -38,6 +38,14 @@
     gap: 1rem;
   }
 
+  .header__menu__item {
+    width: auto;
+  }
+
+  .header__menu__item.subitemList:hover {
+    background-color: none;
+  }
+
   .header__menu.open {
     display: flex;
   }

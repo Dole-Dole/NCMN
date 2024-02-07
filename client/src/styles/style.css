@@ -144,13 +144,15 @@ button:focus {
 }
 
 .header__menu {
+  text-align: center;
   display: flex;
   gap: 4px;
 }
 
 .header__menu__item {
+  width: 120px;
   display: block;
-  padding: 8px 16px;
+  padding: 8px;
   border-bottom: 1px solid transparent;
 }
 
@@ -158,13 +160,13 @@ button:focus {
   border-bottom: 1px solid var(--color-accent);
 }
 
-.header__menu__item.subitemList:hover {
-  border-bottom: none;
+.header__menu__item:hover .subtitle {
+  color: var(--color-yellow);
 }
 
-.header__menu__item.active {
-  border: 1px solid var(--color-accent);
-  border-radius: 4px;
+.header__menu__item.subitemList:hover {
+  background-color: var(--color-gray);
+  border-bottom: none;
 }
 
 .header__menu__item:hover .community {
