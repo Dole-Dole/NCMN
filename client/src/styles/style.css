@@ -75,6 +75,15 @@ button:focus {
 }
 
 /* Common */
+#wrap {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .section {
   padding: 4rem;
   text-align: center;
@@ -176,6 +185,7 @@ button:focus {
 }
 
 /* Footer */
+
 #contact {
   position: relative;
   background-color: var(--color-white);
