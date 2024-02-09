@@ -12,16 +12,13 @@
   .begin_from {
     margin-top: 2rem;
     padding: 1.5rem;
+    width: 380px;
     height: 380px;
   }
 
   .begin__contact {
     font-size: 1.1rem;
     padding: 0.8rem;
-  }
-
-  #begin .max-container {
-    width: 380px;
   }
 
   #begin {

@@ -17,11 +17,8 @@
   .agree_from {
     margin-top: 2rem;
     padding: 1.5rem;
-    height: 380px;
-  }
-
-  #agree .max-container {
     width: 380px;
+    height: 380px;
   }
 
   #agree {
