@@ -30,9 +30,9 @@
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/client/src/styles/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/auth/login.css" />
+    <link rel="stylesheet" href="/client/src/styles/auth/find.css" />
     <link rel="stylesheet" href="/client/src/styles/media/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/media/auth/login.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/auth/find.css" />
 
     <!-- Javascript -->
     <script type="module" src="/client/src/utils/main.js" defer></script>
@@ -124,48 +124,14 @@
             </div>
           </div>
           <div class="max-container login__container">
-            <form class="login_from" action="#" method="POST">
-              <h1 class="login_title">Login</h1>
-              <div>
-                <div class="form_item userId" tabindex="0">
-                  <i class="fa-solid fa-user"></i>
-                  <input
-                    type="text"
-                    id="id"
-                    name="id"
-                    placeholder="아이디"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocapitalize="off"
-                  />
-                </div>
-                <div class="form_item lock password" tabindex="0">
-                  <i class="fa-solid fa-lock"></i>
-                  <input
-                    type="password"
-                    id="pswd1"
-                    name="pswd1"
-                    placeholder="비밀번호"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="new-password"
-                  />
-                </div>
-              </div>
-              <button class="login__contact" type="submit">Login</button>
-              <ul class="login_menu">
-                <li><a href="#subitem1">비밀번호 찾기</a></li>
-                <li id="login_menu2">
-                  <a href="/client/src/pages/auth/find/findId.html"
-                    >아이디 찾기</a
-                  >
-                </li>
-                <li style="border: none">
-                  <a href="/client/src/pages/auth/join/agree.html">회원가입</a>
-                </li>
-              </ul>
+            <form
+              class="find_from"
+              action="/client/src/pages/auth/login/login.html"
+            >
+              <h1 class="find_title">아이디 입니다.</h1>
+              <button class="find__contact" name="find__contact" type="submit">
+                로그인
+              </button>
             </form>
           </div>
         </section>

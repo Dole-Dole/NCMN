@@ -1,0 +1,190 @@
+body {
+  background-image: var(--home-bg-svg);
+  background-color: var(--color-primary);
+}
+
+/* Home */
+#home {
+  position: relative;
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+#home .max-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home .home__avatar {
+  position: relative;
+  width: 100%; /* 이미지를 부모 요소의 100%로 설정하여 부모의 크기에 맞춤 */
+  height: auto; /* 가로 비율 유지 */
+  margin-right: 20px; /* 이미지와 텍스트 사이 여백 조절 */
+  max-width: 300px;
+  bottom: -30px;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--color-white);
+  mask: var(--divider-single-wave);
+  -webkit-mask: var(--divider-single-wave);
+}
+
+.home__title {
+  height: 200px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  word-break: keep-all;
+}
+
+.home__title--strong {
+  font-size: 3rem;
+  color: var(--color-accent);
+}
+
+.home__description {
+  font-size: 1.1rem;
+  word-break: keep-all;
+}
+
+.home__contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.home__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
+#find {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 5rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.find_title {
+  font-size: 3rem;
+  margin: 0rem 0 2rem 0;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+
+.find_from {
+  width: 500px;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid var(--color-white);
+  border-radius: 9px;
+  box-shadow: var(--color-white) 1px 6px 10px;
+}
+
+.form_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+}
+
+.input {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-white);
+  padding: 13px;
+  border-radius: 0;
+  border: none;
+  background: 0 0;
+  appearance: none;
+  outline: 0;
+  text-decoration: none;
+}
+
+.find__container {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.find__contact {
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem 0;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: var(--color-white) 0px 3px 15px;
+}
+
+.find__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
+
+/* footer */
+#contact {
+  position: relative;
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+#home::after {
+  display: none;
+}
+
+#contact::after {
+  display: none;
+}
+
+.contact__links {
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  color: var(--color-white);
+  transition: color 250ms ease-in;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
+}
