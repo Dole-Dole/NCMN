@@ -1,16 +1,13 @@
 import jwt from "jsonwebtoken";
 import { config } from "../config.js";
 
-import * as userRepository from "../data/user.js";
+import * as userRepository from "../data/auth.js";
 
 const AUTH_ERROR = { message: "Authentication Error" };
 
 export const isAuth = async (req, res, next) => {
-  // 1. 쿠키 여부 확인
-  // 2. 헤더 검사
-
   let token;
-  // check the header first
+  // Check the header first
   const authHeader = req.get("Authorization");
   console.log(authHeader);
 
@@ -18,7 +15,7 @@ export const isAuth = async (req, res, next) => {
     token = authHeader.split(" ")[1];
   }
 
-  //if no token in to header, check the cookie
+  // If no token in the header, check the cookie
   if (!token) {
     token = req.cookies["token"];
   }
@@ -29,25 +26,21 @@ export const isAuth = async (req, res, next) => {
 
   jwt.verify(token, config.jwt.secretKey, async (error, decoded) => {
     if (error) {
-      console.log("2");
+      console.error("JWT verification error:", error);
       return res.status(401).json(AUTH_ERROR);
     }
-    console.log("\n decoded: ", decoded, "\n");
 
-    const user = await userRepository.findById(decoded.id);
-
-    console.log("\n user: ", user, "\n");
+    const userId = decoded.id;
+    const user = await userRepository.findById(userId);
 
     if (!user) {
-      console.log("3");
-
+      console.error("User not found");
       return res.status(401).json(AUTH_ERROR);
     }
 
-    //req.userId = user.id;
-    req.userId = user.userID;
+    req.user = user;
     req.token = token;
-    console.log("\n req.userId: ", req.userId);
+    console.log("\n req.user: ", req.user);
     console.log("req.token: ", req.token, "\n");
 
     next();

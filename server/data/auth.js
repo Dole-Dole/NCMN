@@ -1,17 +1,25 @@
 import { db } from "../db/database.js";
 
 export async function findById(id) {
-  return db
-    .execute("SELECT * FROM users WHERE userID=?", [id])
-    .then((result) => result[0][0]);
+  try {
+    const [rows] = await db.execute("SELECT * FROM auth WHERE userID=?", [id]);
+    return rows[0];
+  } catch (error) {
+    console.error("Error in findById:", error);
+    throw error; // 에러를 상위 레벨로 전파하여 처리
+  }
 }
 
 export async function createUser(user) {
-  const { userID, username, password, email, createAt } = user;
-  return db
-    .execute(
-      "INSERT INTO users (userID, username, password, email, createAt) VALUES (?, ?, ?, ?, ?)",
-      [userID, username, password, email, createAt]
-    )
-    .then((result) => result[0].insertId);
+  try {
+    const { userID, password, userName, birthday, university, phone } = user;
+    const [result] = await db.execute(
+      "INSERT INTO auth (userID, password, userName, birthday, university, phone) VALUES (?, ?, ?, ?, ?, ?)",
+      [userID, password, userName, birthday, university, phone]
+    );
+    return result.insertId;
+  } catch (error) {
+    console.error("Error in createUser:", error);
+    throw error; // 에러를 상위 레벨로 전파하여 처리
+  }
 }
