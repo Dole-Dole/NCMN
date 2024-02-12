@@ -29,39 +29,22 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-
     <link rel="stylesheet" href="/client/src/styles/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/auth/begin.css" />
+    <link rel="stylesheet" href="/client/src/styles/auth/find.css" />
     <link rel="stylesheet" href="/client/src/styles/media/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/media/auth/begin.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/auth/find.css" />
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <script type="module" src="/client/src/utils/main.js" defer></script>
     <script
       type="module"
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
-    <script
-      type="module"
-      src="/client/src/pages/auth/join/begin.js"
-      defer
-    ></script>
-    <script
-      type="module"
-      src="/client/src/pages/auth/join/datepicker.js"
-      defer
-    ></script>
   </head>
   <body>
+    <!-- Header -->
     <div id="wrap">
-      <!-- Header -->
       <header class="header">
         <div class="header__logo">
           <img
@@ -113,11 +96,7 @@
               </ul>
             </li>
             <li>
-              <a
-                class="header__menu__item login"
-                href="/client/src/pages/auth/login/login.html"
-                >Login</a
-              >
+              <a class="header__menu__item login" href="#">Login</a>
             </li>
           </ul>
         </nav>
@@ -127,100 +106,15 @@
       </header>
       <!-- Main -->
       <main>
-        <section id="begin">
-          <div class="max-container">
-            <form class="begin_from" action="#">
-              <div>
-                <div class="form_item userId" tabindex="0">
-                  <i class="fa-solid fa-user"></i>
-                  <input
-                    type="text"
-                    id="id"
-                    name="id"
-                    placeholder="아이디"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocapitalize="off"
-                  />
-                </div>
-                <div class="form_item lock password" tabindex="0">
-                  <i class="fa-solid fa-lock"></i>
-                  <input
-                    type="password"
-                    id="pswd1"
-                    name="pswd1"
-                    placeholder="비밀번호"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="new-password"
-                  />
-                </div>
-              </div>
-
-              <div class="inforList">
-                <div class="form_item username" tabindex="0">
-                  <i class="fa-solid fa-user"></i>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="이름"
-                    class="input"
-                    value=""
-                    maxlength="5"
-                    autocapitalize="off"
-                  />
-                </div>
-                <div class="form_item birthday" tabindex="0">
-                  <i class="fa-regular fa-calendar-days"></i>
-                  <input
-                    type="text"
-                    id="birthday"
-                    name="birthday"
-                    placeholder="생년월일"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="form_item university" tabindex="0">
-                  <i class="fa-brands fa-google-scholar"></i>
-                  <input
-                    type="text"
-                    id="university"
-                    name="university"
-                    placeholder="대학교"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="form_item lock phone" tabindex="0">
-                  <i class="fa-solid fa-phone"></i>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="전화번호"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete=""
-                  />
-                </div>
-              </div>
-
-              <button
-                class="begin__contact"
-                name="begin__contact"
-                type="submit"
-                disabled
-              >
-                다음
+        <section id="home">
+          <div class="max-container login__container">
+            <form
+              class="find_from"
+              action="/client/src/pages/auth/login/login.html"
+            >
+              <h1 class="find_title">아이디 입니다.</h1>
+              <button class="find__contact" name="find__contact" type="submit">
+                로그인
               </button>
             </form>
           </div>

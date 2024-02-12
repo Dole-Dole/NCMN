@@ -1,6 +1,15 @@
 @media (max-width: 767px) {
+  #home {
+    padding-bottom: 1.5rem;
+  }
+
   #login {
     padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .login_from {
+    width: 380px;
+    padding: 1.5rem;
   }
 
   .login_title {
@@ -17,7 +26,7 @@
   }
 
   .login__container {
-    margin-top: 1rem; /* Add some space between the avatar and the form */
+    margin-top: 2rem; /* Add some space between the avatar and the form */
     font-size: 1rem;
   }
 

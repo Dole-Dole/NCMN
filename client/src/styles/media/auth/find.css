@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+  #home {
+    padding-bottom: 1.5rem;
+  }
+
+  #find {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .find_from {
+    width: 380px;
+    padding: 1.5rem;
+  }
+
+  .find_title {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .home__title {
+    height: 160px;
+  }
+
+  .find__container {
+    margin-top: 2rem; /* Add some space between the avatar and the form */
+    font-size: 1rem;
+  }
+}

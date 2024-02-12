@@ -31,8 +31,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/client/src/styles/style.css" />
     <link rel="stylesheet" href="/client/src/styles/auth/agree.css" />
-    <link rel="stylesheet" href="/client/src/styles/media/home.css" />
-    <link rel="stylesheet" href="/client/src/styles/media/login.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/style.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/auth/agree.css" />
 
     <!-- Javascript -->
     <script
@@ -40,7 +40,6 @@
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
-    <script type="module" src="/client/src/utils/type.js" defer></script>
 
     <script>
       function agreeCheck(frm) {
@@ -51,240 +50,244 @@
     </script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__logo">
-        <img
-          class="header__logo__img"
-          src="/client/src/assets/images/favicon.ico"
-          alt="logo"
-        />
-        <h1 class="header__logo__title">
-          <a href="/client/public/index.html">NCMN 대학캠퍼스</a>
-        </h1>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li>
-            <a
-              class="header__menu__item active"
-              href="/client/public/index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="header__menu__item" href="/client/public/index.html#meia"
-              >Media</a
-            >
-          </li>
-          <li class="header__menu__item subitemList">
-            <a>Community</a>
-            <ul class="community">
-              <li><a href="#subitem1">사역보고</a></li>
-              <li><a href="#subitem2">지출결의서</a></li>
-              <li><a href="#subitem3">훈련점수표</a></li>
-            </ul>
-          </li>
-          <li>
-            <a
-              class="header__menu__item login"
-              href="/client/src/pages/auth/login/login.html"
-              >Login</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle" aria-label="navigation menu toggle">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </header>
-    <!-- Main -->
-    <main>
-      <section id="agree">
-        <div class="max-container agree__container">
+    <div id="wrap">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__logo">
           <img
-            class="agree__avatar"
-            src="/client/src/assets/images/profile.png"
-            alt="NMCM 대학캠퍼스"
+            class="header__logo__img"
+            src="/client/src/assets/images/favicon.ico"
+            alt="logo"
           />
-          <div>
-            <h2 class="agree__title">
-              NCMN 대학캠퍼스 <br />
-              <strong class="home__title--strong"
-                >오늘은 캠퍼스로<br />내일은 열방으로</strong
+          <h1 class="header__logo__title">
+            <a href="/client/public/index.html">NCMN 대학캠퍼스</a>
+          </h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a
+                class="header__menu__item active"
+                href="/client/public/index.html"
+                >Home</a
               >
-            </h2>
-          </div>
-        </div>
-        <div class="max-container login__container">
-          <form
-            class="agree_from"
-            action="/client/src/pages/auth/join/begin.html"
-          >
-            <div class="check_terms">
-              <div class="check_wrap">
-                <input
-                  type="checkbox"
-                  id="termsService"
-                  class="blind"
-                  onClick="agreeCheck(this.form)"
-                />
-                <label for="termsService">
-                  <em class="option point">[필수]</em>
-                  <div class="text_wrap">
-                    <span class="text">개인정보 수집 이용 안내</span>
+            </li>
+            <li class="header__menu__item subitemList">
+              <a class="subtitle">SNS</a>
+              <ul class="community">
+                <li><a href="/client/public/index.html#media">Media</a></li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@kingsheroncmn"
+                    target="_blank"
+                  >
+                    Youtube
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/kings_hero0214/"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu__item subitemList">
+              <a class="subtitle">Community</a>
+              <ul class="community">
+                <li><a href="#subitem1">사역보고</a></li>
+                <li><a href="#subitem2">지출결의서</a></li>
+                <li><a href="#subitem3">훈련점수표</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="header__menu__item login"
+                href="/client/src/pages/auth/login/login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
+      <!-- Main -->
+      <main>
+        <section id="agree">
+          <div class="max-container login__container">
+            <form
+              class="agree_from"
+              action="/client/src/pages/auth/join/begin.html"
+            >
+              <div class="check_terms">
+                <div class="check_wrap">
+                  <input
+                    type="checkbox"
+                    id="termsService"
+                    class="blind"
+                    onClick="agreeCheck(this.form)"
+                  />
+                  <label for="termsService">
+                    <em class="option point">[필수]</em>
+                    <div class="text_wrap">
+                      <span class="text">개인정보 수집 이용 안내</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="terms_box" tabindex="0">
+                <!-- 개인정보 수집 및 이용에 대한 안내 -->
+                <div class="article">
+                  <p class="article_text">
+                    개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께
+                    수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적,
+                    개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시
+                    불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여
+                    주시기 바랍니다.
+                  </p>
+                </div>
+                <div class="article">
+                  <h3 class="article_title">3. 개인정보의 보관기간</h3>
+                  <div class="clause large">
+                    <h4 class="clause_title">
+                      회사는 원칙적으로 이용자의 개인정보를 회원 탈퇴 시
+                      지체없이 파기하고 있습니다.<br />
+                      단, 이용자에게 개인정보 보관기간에 대해 별도의 동의를 얻은
+                      경우, 또는 법령에서 일정 기간 정보보관 의무를 부과하는
+                      경우에는 해당 기간 동안 개인정보를 안전하게 보관합니다.
+                    </h4>
                   </div>
-                </label>
+                  <div class="clause">
+                    <h4 class="clause_title">
+                      이용자에게 개인정보 보관기간에 대해 회원가입 시 또는
+                      서비스 가입 시 동의를 얻은 경우는 아래와 같습니다.
+                    </h4>
+                    <ul class="sections">
+                      <li class="sections_section">
+                        - 부정 가입 및 이용 방지 <br />부정 이용자의 가입인증
+                        휴대전화번호 또는 DI (만 14세 미만의 경우 법정대리인DI)
+                        : 탈퇴일로부터 6개월 보관 <br />탈퇴한 이용자의
+                        휴대전화번호(휴대전화 인증 시), DI(아이핀 인증 시):
+                        탈퇴일로부터 6개월 보관(복호화가 불가능한 일방향
+                        암호화(해시)하여 보관)
+                      </li>
+                      <li class="sections_section">
+                        - 네이버 서비스 제공을 위한 본인 확인<br />
+                        통신사 정보 : 수집 시점으로부터 1년 보관
+                      </li>
+                      <li class="sections_section">
+                        - QR코드 복구 요청 대응 <br />QR코드 등록 정보:삭제
+                        시점으로부터6개월 보관
+                      </li>
+                      <li class="sections_section">
+                        - 스마트플레이스 분쟁 조정 및 고객문의 대응
+                        <br />휴대전화번호:등록/수정/삭제 요청 시로부터 최대1년
+                      </li>
+                      <li class="sections_section">
+                        - 네이버 플러스 멤버십 서비스 혜택 중복 제공 방지
+                        <br />암호화처리(해시처리)한DI : 네이버 회원
+                        탈퇴일로부터 6개월 보관
+                      </li>
+                      <li class="sections_section">
+                        - 네이버 엑스퍼트 재가입 신청 및 부정 이용 방지<br />
+                        네이버 엑스퍼트 서비스 및 네이버 엑스퍼트 센터 가입
+                        등록정보&판매자 이름 : 신청일로부터 6개월(등록 거절 시,
+                        거절 의사 표시한 날로부터 30일) 보관
+                      </li>
+                      <li class="sections_section">
+                        - 전자서명 인증 업무<br />
+                        개인정보: 네이버 인증서 서비스 해지 시까지 보관
+                      </li>
+                      <li class="sections_section">
+                        - 인증서와 인증 업무에 관한 기록: 인증서 효력
+                        상실일로부터 5년 보관
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="clause">
+                    <h4 class="clause_title">
+                      전자상거래 등에서의 소비자 보호에 관한 법률, 전자문서 및
+                      전자거래 기본법, 통신비밀보호법 등 법령에서 일정기간
+                      정보의 보관을 규정하는 경우는 아래와 같습니다. 네이버는 이
+                      기간 동안 법령의 규정에 따라 개인정보를 보관하며, 본
+                      정보를 다른 목적으로는 절대 이용하지 않습니다.
+                    </h4>
+                    <ul class="sections">
+                      <li class="sections_section">
+                        - 전자상거래 등에서 소비자 보호에 관한 법률 <br />계약
+                        또는 청약철회 등에 관한 기록: 5년 보관 <br />대금결제 및
+                        재화 등의 공급에 관한 기록: 5년 보관 <br />소비자의 불만
+                        또는 분쟁처리에 관한 기록: 3년 보관
+                      </li>
+                      <li class="sections_section">
+                        - 전자문서 및 전자거래 기본법 <br />공인전자주소를 통한
+                        전자문서 유통에 관한 기록 : 10년 보관
+                      </li>
+                      <li class="sections_section">
+                        - 통신비밀보호법 <br />로그인 기록: 3개월<br /><br />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="article">
+                  <h3 class="article_title">
+                    4. 개인정보 수집 및 이용 동의를 거부할 권리
+                  </h3>
+                  <p class="clause_text">
+                    이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가
+                    있습니다. 회원가입 시 수집하는 최소한의 개인정보, 즉, 필수
+                    항목에 대한 수집 및 이용 동의를 거부하실 경우, 회원가입이
+                    어려울 수 있습니다.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="terms_box" tabindex="0">
-              <!-- 개인정보 수집 및 이용에 대한 안내 -->
-              <div class="article">
-                <p class="article_text">
-                  개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께
-                  수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적,
-                  개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시
-                  불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여
-                  주시기 바랍니다.
-                </p>
-              </div>
-              <div class="article">
-                <h3 class="article_title">3. 개인정보의 보관기간</h3>
-                <div class="clause large">
-                  <h4 class="clause_title">
-                    회사는 원칙적으로 이용자의 개인정보를 회원 탈퇴 시 지체없이
-                    파기하고 있습니다.<br />
-                    단, 이용자에게 개인정보 보관기간에 대해 별도의 동의를 얻은
-                    경우, 또는 법령에서 일정 기간 정보보관 의무를 부과하는
-                    경우에는 해당 기간 동안 개인정보를 안전하게 보관합니다.
-                  </h4>
-                </div>
-                <div class="clause">
-                  <h4 class="clause_title">
-                    이용자에게 개인정보 보관기간에 대해 회원가입 시 또는 서비스
-                    가입 시 동의를 얻은 경우는 아래와 같습니다.
-                  </h4>
-                  <ul class="sections">
-                    <li class="sections_section">
-                      - 부정 가입 및 이용 방지 <br />부정 이용자의 가입인증
-                      휴대전화번호 또는 DI (만 14세 미만의 경우 법정대리인DI) :
-                      탈퇴일로부터 6개월 보관 <br />탈퇴한 이용자의
-                      휴대전화번호(휴대전화 인증 시), DI(아이핀 인증 시):
-                      탈퇴일로부터 6개월 보관(복호화가 불가능한 일방향
-                      암호화(해시)하여 보관)
-                    </li>
-                    <li class="sections_section">
-                      - 네이버 서비스 제공을 위한 본인 확인<br />
-                      통신사 정보 : 수집 시점으로부터 1년 보관
-                    </li>
-                    <li class="sections_section">
-                      - QR코드 복구 요청 대응 <br />QR코드 등록 정보:삭제
-                      시점으로부터6개월 보관
-                    </li>
-                    <li class="sections_section">
-                      - 스마트플레이스 분쟁 조정 및 고객문의 대응
-                      <br />휴대전화번호:등록/수정/삭제 요청 시로부터 최대1년
-                    </li>
-                    <li class="sections_section">
-                      - 네이버 플러스 멤버십 서비스 혜택 중복 제공 방지
-                      <br />암호화처리(해시처리)한DI : 네이버 회원 탈퇴일로부터
-                      6개월 보관
-                    </li>
-                    <li class="sections_section">
-                      - 네이버 엑스퍼트 재가입 신청 및 부정 이용 방지<br />
-                      네이버 엑스퍼트 서비스 및 네이버 엑스퍼트 센터 가입
-                      등록정보&판매자 이름 : 신청일로부터 6개월(등록 거절 시,
-                      거절 의사 표시한 날로부터 30일) 보관
-                    </li>
-                    <li class="sections_section">
-                      - 전자서명 인증 업무<br />
-                      개인정보: 네이버 인증서 서비스 해지 시까지 보관
-                    </li>
-                    <li class="sections_section">
-                      - 인증서와 인증 업무에 관한 기록: 인증서 효력 상실일로부터
-                      5년 보관
-                    </li>
-                  </ul>
-                </div>
-                <div class="clause">
-                  <h4 class="clause_title">
-                    전자상거래 등에서의 소비자 보호에 관한 법률, 전자문서 및
-                    전자거래 기본법, 통신비밀보호법 등 법령에서 일정기간 정보의
-                    보관을 규정하는 경우는 아래와 같습니다. 네이버는 이 기간
-                    동안 법령의 규정에 따라 개인정보를 보관하며, 본 정보를 다른
-                    목적으로는 절대 이용하지 않습니다.
-                  </h4>
-                  <ul class="sections">
-                    <li class="sections_section">
-                      - 전자상거래 등에서 소비자 보호에 관한 법률 <br />계약
-                      또는 청약철회 등에 관한 기록: 5년 보관 <br />대금결제 및
-                      재화 등의 공급에 관한 기록: 5년 보관 <br />소비자의 불만
-                      또는 분쟁처리에 관한 기록: 3년 보관
-                    </li>
-                    <li class="sections_section">
-                      - 전자문서 및 전자거래 기본법 <br />공인전자주소를 통한
-                      전자문서 유통에 관한 기록 : 10년 보관
-                    </li>
-                    <li class="sections_section">
-                      - 통신비밀보호법 <br />로그인 기록: 3개월<br /><br />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="article">
-                <h3 class="article_title">
-                  4. 개인정보 수집 및 이용 동의를 거부할 권리
-                </h3>
-                <p class="clause_text">
-                  이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가
-                  있습니다. 회원가입 시 수집하는 최소한의 개인정보, 즉, 필수
-                  항목에 대한 수집 및 이용 동의를 거부하실 경우, 회원가입이
-                  어려울 수 있습니다.
-                </p>
-              </div>
-            </div>
-
-            <button
-              class="agree__contact"
-              name="agree__contact"
-              type="submit"
-              disabled
-            >
-              다음
-            </button>
-          </form>
+              <button
+                class="agree__contact"
+                name="agree__contact"
+                type="submit"
+                disabled
+              >
+                다음
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer id="contact" class="section">
+        <div class="max-container">
+          <ul class="contact__links">
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.youtube.com/@kingsheroncmn"
+                target="_blank"
+                title="my github link"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/kings_hero0214/"
+                target="_blank"
+                title="my linkedin link"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="description">nmcnKingHero@test.com</p>
+          <p class="description">ⓒ NCMN. Nations-Changer Movement & Network.</p>
         </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://www.youtube.com/@kingsheroncmn"
-              target="_blank"
-              title="my github link"
-            >
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact__link"
-              href="https://www.instagram.com/kings_hero0214/"
-              target="_blank"
-              title="my linkedin link"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="description">nmcnKingHero@test.com</p>
-        <p class="description">ⓒ NCMN. Nations-Changer Movement & Network.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

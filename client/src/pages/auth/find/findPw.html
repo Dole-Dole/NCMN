@@ -29,39 +29,24 @@
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-
     <link rel="stylesheet" href="/client/src/styles/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/auth/begin.css" />
+    <link rel="stylesheet" href="/client/src/styles/auth/find.css" />
     <link rel="stylesheet" href="/client/src/styles/media/style.css" />
-    <link rel="stylesheet" href="/client/src/styles/media/auth/begin.css" />
+    <link rel="stylesheet" href="/client/src/styles/media/auth/find.css" />
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="module" src="/client/src/utils/main.js" defer></script>
 
     <script
       type="module"
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
-    <script
-      type="module"
-      src="/client/src/pages/auth/join/begin.js"
-      defer
-    ></script>
-    <script
-      type="module"
-      src="/client/src/pages/auth/join/datepicker.js"
-      defer
-    ></script>
+    <script type="module" src="/client/src/utils/inputCheck.js" defer></script>
   </head>
   <body>
+    <!-- Header -->
     <div id="wrap">
-      <!-- Header -->
       <header class="header">
         <div class="header__logo">
           <img
@@ -113,11 +98,7 @@
               </ul>
             </li>
             <li>
-              <a
-                class="header__menu__item login"
-                href="/client/src/pages/auth/login/login.html"
-                >Login</a
-              >
+              <a class="header__menu__item login" href="#">Login</a>
             </li>
           </ul>
         </nav>
@@ -127,9 +108,13 @@
       </header>
       <!-- Main -->
       <main>
-        <section id="begin">
-          <div class="max-container">
-            <form class="begin_from" action="#">
+        <section id="home">
+          <div class="max-container login__container">
+            <form
+              class="find_from"
+              action="/client/src/pages/auth/find/newPw.html"
+            >
+              <h1 class="find_title">비밀번호 찾기</h1>
               <div>
                 <div class="form_item userId" tabindex="0">
                   <i class="fa-solid fa-user"></i>
@@ -144,22 +129,6 @@
                     autocapitalize="off"
                   />
                 </div>
-                <div class="form_item lock password" tabindex="0">
-                  <i class="fa-solid fa-lock"></i>
-                  <input
-                    type="password"
-                    id="pswd1"
-                    name="pswd1"
-                    placeholder="비밀번호"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="new-password"
-                  />
-                </div>
-              </div>
-
-              <div class="inforList">
                 <div class="form_item username" tabindex="0">
                   <i class="fa-solid fa-user"></i>
                   <input
@@ -169,34 +138,8 @@
                     placeholder="이름"
                     class="input"
                     value=""
-                    maxlength="5"
+                    maxlength="6"
                     autocapitalize="off"
-                  />
-                </div>
-                <div class="form_item birthday" tabindex="0">
-                  <i class="fa-regular fa-calendar-days"></i>
-                  <input
-                    type="text"
-                    id="birthday"
-                    name="birthday"
-                    placeholder="생년월일"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="form_item university" tabindex="0">
-                  <i class="fa-brands fa-google-scholar"></i>
-                  <input
-                    type="text"
-                    id="university"
-                    name="university"
-                    placeholder="대학교"
-                    class="input"
-                    value=""
-                    maxlength="20"
-                    autocomplete="off"
                   />
                 </div>
                 <div class="form_item lock phone" tabindex="0">
@@ -213,13 +156,7 @@
                   />
                 </div>
               </div>
-
-              <button
-                class="begin__contact"
-                name="begin__contact"
-                type="submit"
-                disabled
-              >
+              <button class="contact" name="contact" type="submit" disabled>
                 다음
               </button>
             </form>
