@@ -42,6 +42,7 @@
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
+    <script type="module" src="/client/src/utils/inputCheck.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -154,9 +155,13 @@
                   />
                 </div>
               </div>
-              <button class="login__contact" type="submit">Login</button>
+              <button class="contact" type="submit" disabled>Login</button>
               <ul class="login_menu">
-                <li><a href="#subitem1">비밀번호 찾기</a></li>
+                <li>
+                  <a href="/client/src/pages/auth/find/findPw.html"
+                    >비밀번호 찾기</a
+                  >
+                </li>
                 <li id="login_menu2">
                   <a href="/client/src/pages/auth/find/findId.html"
                     >아이디 찾기</a

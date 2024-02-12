@@ -41,6 +41,7 @@
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
+    <script type="module" src="/client/src/utils/inputCheck.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -110,11 +111,40 @@
           <div class="max-container login__container">
             <form
               class="find_from"
-              action="/client/src/pages/auth/login/login.html"
+              action="/client/src/pages/auth/find/newPw.html"
             >
-              <h1 class="find_title">아이디 입니다.</h1>
-              <button class="find__contact" name="find__contact" type="submit">
-                로그인
+              <h1 class="find_title">비밀번호 재설정</h1>
+              <div>
+                <div class="form_item lock password" tabindex="0">
+                  <i class="fa-solid fa-lock"></i>
+                  <input
+                    type="password"
+                    id="pswd1"
+                    name="pswd1"
+                    placeholder="비밀번호"
+                    class="input"
+                    value=""
+                    maxlength="20"
+                    autocomplete="new-password"
+                  />
+                </div>
+                <div class="form_item lock password" tabindex="0">
+                  <i class="fa-solid fa-lock"></i>
+                  <input
+                    type="password"
+                    id="pswd1"
+                    name="pswd1"
+                    placeholder="비밀번호 확인"
+                    class="input"
+                    ㄴ
+                    value=""
+                    maxlength="20"
+                    autocomplete="new-password"
+                  />
+                </div>
+              </div>
+              <button class="contact" name="contact" type="submit" disabled>
+                다음
               </button>
             </form>
           </div>

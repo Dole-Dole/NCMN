@@ -133,12 +133,12 @@ body {
   text-decoration: none;
 }
 
-.login__container {
+.container {
   margin: 0 auto;
   justify-content: center;
 }
 
-.login__contact {
+.contact {
   display: inline-block;
   font-size: 1.2rem;
   background-color: var(--color-accent);
@@ -150,10 +150,15 @@ body {
   box-shadow: var(--color-white) 0px 3px 15px;
 }
 
-.login__contact:hover {
+.contact:hover {
   background-color: transparent;
   color: var(--color-text);
   outline: 2px solid var(--color-accent);
+}
+
+.contact:disabled {
+  background: #8990a0;
+  cursor: default;
 }
 
 .login_menu {
