@@ -17,9 +17,9 @@ loginForm.addEventListener("submit", async (event) => {
   try {
     const data = await authService.login(userID, password);
     console.log("로그인 성공:", data);
-    // 로그인 성공 시 리다이렉트 또는 다른 작업 수행
+    window.location.href = "/client/public/index.html";
   } catch (error) {
     console.error("로그인 실패:", error.message);
-    // 에러 처리
+    alert("아이디 또는 비밀번호를 확인해주세요");
   }
 });
