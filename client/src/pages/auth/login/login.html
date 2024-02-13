@@ -125,14 +125,14 @@
             </div>
           </div>
           <div class="max-container login__container">
-            <form class="login_from" action="#" method="POST">
+            <form class="login_from" id="login_form">
               <h1 class="login_title">Login</h1>
               <div>
                 <div class="form_item userId" tabindex="0">
                   <i class="fa-solid fa-user"></i>
                   <input
                     type="text"
-                    id="id"
+                    id="userID"
                     name="id"
                     placeholder="아이디"
                     class="input"
@@ -145,8 +145,8 @@
                   <i class="fa-solid fa-lock"></i>
                   <input
                     type="password"
-                    id="pswd1"
-                    name="pswd1"
+                    id="password"
+                    name="password"
                     placeholder="비밀번호"
                     class="input"
                     value=""
@@ -155,7 +155,9 @@
                   />
                 </div>
               </div>
-              <button class="contact" type="submit" disabled>Login</button>
+              <button class="contact" id="login_submit" type="submit" disabled>
+                Login
+              </button>
               <ul class="login_menu">
                 <li>
                   <a href="/client/src/pages/auth/find/findPw.html"
@@ -206,4 +208,5 @@
       </footer>
     </div>
   </body>
+  <script type="module" src="./login.js"></script>
 </html>
