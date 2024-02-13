@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken";
 import { config } from "../config.js";
-
 import * as userRepository from "../data/auth.js";
 
 const AUTH_ERROR = { message: "Authentication Error" };
@@ -9,13 +8,11 @@ export const isAuth = async (req, res, next) => {
   let token;
   // Check the header first
   const authHeader = req.get("Authorization");
-  console.log(authHeader);
 
   if (authHeader && authHeader.startsWith("Bearer ")) {
     token = authHeader.split(" ")[1];
   }
 
-  // If no token in the header, check the cookie
   if (!token) {
     token = req.cookies["token"];
   }
@@ -30,8 +27,8 @@ export const isAuth = async (req, res, next) => {
       return res.status(401).json(AUTH_ERROR);
     }
 
-    const userId = decoded.id;
-    const user = await userRepository.findById(userId);
+    const userID = decoded.userID;
+    const user = await userRepository.findById(userID);
 
     if (!user) {
       console.error("User not found");
@@ -40,8 +37,7 @@ export const isAuth = async (req, res, next) => {
 
     req.user = user;
     req.token = token;
-    console.log("\n req.user: ", req.user);
-    console.log("req.token: ", req.token, "\n");
+    console.log("userName: ", req.user.userName);
 
     next();
   });

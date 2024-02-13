@@ -1,8 +1,10 @@
 import { db } from "../db/database.js";
 
-export async function findById(id) {
+export async function findById(userID) {
   try {
-    const [rows] = await db.execute("SELECT * FROM auth WHERE userID=?", [id]);
+    const [rows] = await db.execute("SELECT * FROM auth WHERE userID=?", [
+      userID,
+    ]);
     return rows[0];
   } catch (error) {
     console.error("Error in findById:", error);
