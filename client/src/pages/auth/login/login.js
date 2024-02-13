@@ -1,6 +1,6 @@
-import AuthService from "../auth.js";
-import HttpClient from "../../../utils/network/http.js";
-import TokenStorage from "../../../utils/db/token.js";
+import AuthService from "/client/src/pages/auth/auth.js";
+import HttpClient from "/client/src/utils/network/http.js";
+import TokenStorage from "/client/src/utils/db/token.js";
 
 const authService = new AuthService(
   new HttpClient("http://127.0.0.1:8080"),

@@ -172,6 +172,10 @@ button:focus {
   display: block;
 }
 
+.header__menu__item:disabled {
+  display: none;
+}
+
 .community {
   display: none;
   list-style: none;

@@ -43,6 +43,7 @@
       defer
     ></script>
     <script type="module" src="/client/src/utils/inputCheck.js" defer></script>
+    <script type="module" src="/client/src/pages/auth/me.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -98,7 +99,16 @@
               </ul>
             </li>
             <li>
-              <a class="header__menu__item login" href="#">Login</a>
+              <a
+                class="header__menu__item"
+                id="login"
+                href="/client/src/pages/auth/login/login.html"
+              >
+                Login
+              </a>
+            </li>
+            <li>
+              <a class="header__menu__item" id="logout"> Logout </a>
             </li>
           </ul>
         </nav>
@@ -158,6 +168,7 @@
               <button class="contact" id="login_submit" type="submit" disabled>
                 Login
               </button>
+
               <ul class="login_menu">
                 <li>
                   <a href="/client/src/pages/auth/find/findPw.html"

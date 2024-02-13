@@ -58,6 +58,7 @@
       src="/client/src/pages/auth/join/datepicker.js"
       defer
     ></script>
+    <script type="module" src="/client/src/pages/auth/me.js" defer></script>
   </head>
   <body>
     <div id="wrap">
@@ -114,10 +115,15 @@
             </li>
             <li>
               <a
-                class="header__menu__item login"
+                class="header__menu__item"
+                id="login"
                 href="/client/src/pages/auth/login/login.html"
-                >Login</a
               >
+                Login
+              </a>
+            </li>
+            <li>
+              <a class="header__menu__item" id="logout"> Logout </a>
             </li>
           </ul>
         </nav>
