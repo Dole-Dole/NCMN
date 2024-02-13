@@ -77,14 +77,6 @@ body {
   outline: 2px solid var(--color-accent);
 }
 
-#login {
-  position: relative;
-  background-color: var(--color-white);
-  padding: 5rem 1rem;
-  text-align: center;
-  overflow: hidden;
-}
-
 .login_title {
   font-size: 3rem;
   margin: 0rem 0 2rem 0;
