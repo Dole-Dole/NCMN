@@ -30,8 +30,8 @@ export const isAuth = async (req, res, next) => {
       return res.status(401).json(AUTH_ERROR);
     }
 
-    const userId = decoded.id;
-    const user = await userRepository.findById(userId);
+    const userID = decoded.userID;
+    const user = await userRepository.findById(userID);
 
     if (!user) {
       console.error("User not found");

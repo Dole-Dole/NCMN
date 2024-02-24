@@ -48,7 +48,7 @@ export async function login(req, res) {
       return res.status(401).json({ message: "Invalid id or password" });
     }
 
-    const token = generateAccessToken(user.userId);
+    const token = generateAccessToken(user.userID);
     setToken(res, token);
 
     res.status(200).json({ token, username: user.username });
@@ -58,8 +58,8 @@ export async function login(req, res) {
   }
 }
 
-function generateAccessToken(userId) {
-  return jwt.sign({ userId }, config.jwt.secretKey, {
+function generateAccessToken(userID) {
+  return jwt.sign({ userID }, config.jwt.secretKey, {
     expiresIn: config.jwt.expiresInSec,
   });
 }
@@ -76,7 +76,7 @@ function setToken(res, token) {
 
 export async function me(req, res, next) {
   try {
-    const user = await authRepository.findById(req.userId);
+    const user = await authRepository.findById(req.user.userID);
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
