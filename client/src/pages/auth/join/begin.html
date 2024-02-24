@@ -42,7 +42,6 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script
       type="module"
       src="/client/src/utils/community_menu.js"
@@ -135,13 +134,13 @@
       <main>
         <section id="begin">
           <div class="max-container">
-            <form class="begin_from" action="#">
+            <form class="begin_from" id="begin_from">
               <div>
                 <div class="form_item userId" tabindex="0">
                   <i class="fa-solid fa-user"></i>
                   <input
                     type="text"
-                    id="id"
+                    id="userID"
                     name="id"
                     placeholder="아이디"
                     class="input"
@@ -154,8 +153,8 @@
                   <i class="fa-solid fa-lock"></i>
                   <input
                     type="password"
-                    id="pswd1"
-                    name="pswd1"
+                    id="password"
+                    name="password"
                     placeholder="비밀번호"
                     class="input"
                     value=""
@@ -170,8 +169,8 @@
                   <i class="fa-solid fa-user"></i>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="userName"
+                    name="userName"
                     placeholder="이름"
                     class="input"
                     value=""
@@ -263,4 +262,5 @@
       </footer>
     </div>
   </body>
+  <script type="module" src="./join.js"></script>
 </html>
