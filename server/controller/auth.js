@@ -76,7 +76,7 @@ function setToken(res, token) {
 
 export async function me(req, res, next) {
   try {
-    const user = req.user;
+    const user = await authRepository.findById(req.user.userID);
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }

@@ -42,6 +42,7 @@
       src="/client/src/utils/community_menu.js"
       defer
     ></script>
+    <script type="module" src="/client/src/pages/auth/me.js" defer></script>
   </head>
   <body>
     <div id="wrap">
@@ -95,10 +96,14 @@
             <li>
               <a
                 class="header__menu__item"
+                id="login"
                 href="/client/src/pages/auth/login/login.html"
               >
                 Login
               </a>
+            </li>
+            <li>
+              <a class="header__menu__item" id="logout"> Logout </a>
             </li>
           </ul>
         </nav>

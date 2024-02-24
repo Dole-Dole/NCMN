@@ -43,6 +43,7 @@
       defer
     ></script>
     <script type="module" src="/client/src/utils/inputCheck.js" defer></script>
+    <script type="module" src="/client/src/pages/auth/me.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -98,7 +99,16 @@
               </ul>
             </li>
             <li>
-              <a class="header__menu__item login" href="#">Login</a>
+              <a
+                class="header__menu__item"
+                id="login"
+                href="/client/src/pages/auth/login/login.html"
+              >
+                Login
+              </a>
+            </li>
+            <li>
+              <a class="header__menu__item" id="logout"> Logout </a>
             </li>
           </ul>
         </nav>
@@ -113,7 +123,7 @@
             <img
               class="home__avatar"
               src="/client/src/assets/images/profile.png"
-              alt="NMCM 대학캠퍼스"
+              alt="NCMN 대학캠퍼스"
             />
             <div>
               <h2 class="home__title">
@@ -125,14 +135,14 @@
             </div>
           </div>
           <div class="max-container login__container">
-            <form class="login_from" action="#" method="POST">
+            <form class="login_from" id="login_form">
               <h1 class="login_title">Login</h1>
               <div>
                 <div class="form_item userId" tabindex="0">
                   <i class="fa-solid fa-user"></i>
                   <input
                     type="text"
-                    id="id"
+                    id="userID"
                     name="id"
                     placeholder="아이디"
                     class="input"
@@ -145,8 +155,8 @@
                   <i class="fa-solid fa-lock"></i>
                   <input
                     type="password"
-                    id="pswd1"
-                    name="pswd1"
+                    id="password"
+                    name="password"
                     placeholder="비밀번호"
                     class="input"
                     value=""
@@ -155,7 +165,10 @@
                   />
                 </div>
               </div>
-              <button class="contact" type="submit" disabled>Login</button>
+              <button class="contact" id="login_submit" type="submit" disabled>
+                Login
+              </button>
+
               <ul class="login_menu">
                 <li>
                   <a href="/client/src/pages/auth/find/findPw.html"
@@ -206,4 +219,5 @@
       </footer>
     </div>
   </body>
+  <script type="module" src="./login.js"></script>
 </html>
