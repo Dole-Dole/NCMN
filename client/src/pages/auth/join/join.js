@@ -13,7 +13,7 @@ beginFrom.addEventListener("submit", async (event) => {
 
   const userID = document.getElementById("userID").value;
   const password = document.getElementById("password").value;
-  const name = document.getElementById("userName").value;
+  const userName = document.getElementById("userName").value;
   const birthday = document.getElementById("birthday").value;
   const university = document.getElementById("university").value;
   const phone = document.getElementById("phone").value;
